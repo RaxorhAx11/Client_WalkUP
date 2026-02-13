@@ -1,7 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
+//const authUrl = import.meta.env.VITE_BACKEND_AUTH_URL;
 const authUrl = import.meta.env.VITE_BACKEND_AUTH_URL;
+console.log("AUTH URL FROM ENV:", authUrl);
 
 const initialState = {
   isAuthenticated: false,
